@@ -3,14 +3,6 @@
 #include <time.h>
 using namespace std;     
 
-enum MenuChoice
-{
-	k_beverages = 1
-	k_bakedgoods = 2
-	k_fruits = 3
-	k_candy = 4
-	k_exit = 5
-}
 
 void main()
 {
