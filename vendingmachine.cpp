@@ -151,3 +151,8 @@ int main()
     }
     
 }
+/* Bug Notes
+-Void main caused it not to run
+-Forgot to add a system pause
+-Learned to add double parenthensis for regular =
+*/
