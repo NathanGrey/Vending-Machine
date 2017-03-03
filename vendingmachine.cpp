@@ -8,23 +8,28 @@ int main()
 {
 	int userInput, beverageChoice, bakedgoodsChoice, fruitsChoice, candyChoice;
 
-    cout << "Welcome to the store! \n"
-   			"Menu: \n"
+    cout << "**************************************************  \n"
+    		"\t Welcome to the Wall Market \n"
+    		"************************************************** \n"
+    		"___|___|___|___|___|___|___|___|___|___|___|___|___\n"
+			"_|___|___|___|___|___|___|___|___|___|___|___|___|_\n"
+			"___|___|___|___|___|___|___|___|___|___|___|___|___\n"
+   			"\t Menu: \n"
     		"\t 1. Beverages \n"
    		    "\t 2. Baked Goods \n"
     		"\t 3. Fruits \n "
     		"\t 4. Candy \n"
-    		"\t 5. Exit \n"
-     		"Choose a category:";
+    		"\t 5. Exit \n \n"
+     		"\t Choose a category:";
     cin >> userInput;
 
     if ((userInput = 1))
     {
-	    cout << "Beverages: \n"
+	    cout << "\t Beverages: \n"
 	    "\t 1. Water 											\t -1.99\n"
 	    "\t 2. Joint Juice 										\t -2.75\n"
-	    "\t 3. Protein Shake 									\t -3.00\n"
-	    "\n Choose a beverage:\n";
+	    "\t 3. Protein Shake 									\t -3.00\n \n"
+	    "\t Choose a beverage:";
 	    cin >> beverageChoice;
 
 		    if ((beverageChoice = 1))
@@ -51,11 +56,11 @@ int main()
     
     else if ((userInput = 2))
     {
-	    cout << "Baked Goods: \n"
+	    cout << "\t Baked Goods: \n"
 	    "\t 1. Blueberry Muffin 								\t -1.25\n"
 	    "\t 2. Peanut Butter Cookie 							\t -2.00\n" 
 	    "\t 3. Peanut Butter Chocolate Chip Cookie 				\t -2.25\n"
-	    "Choose a baked good:";
+	    "\n Choose a baked good: \n";
 	    cin >> bakedgoodsChoice;
 
 	       if ((bakedgoodsChoice = 1))
@@ -81,11 +86,11 @@ int main()
     }
     else if ((userInput = 3))
     {
-	    cout << "Fruits: \n"
+	    cout << "\t Fruits: \n"
 	    "\t 1. Apple 											\t -1.00\n" 
 	    "\t 2. Orange 											\t -1.00\n" 
 	    "\t 3. Banana 											\t -1.00\n" 
-	    "Choose a fruit:";
+	    "\t Choose a fruit: \n";
 	    cin >> fruitsChoice;
 
 	    	if ((fruitsChoice = 1))
@@ -111,31 +116,31 @@ int main()
     }
     else if ((userInput = 4))
     {
-	    cout << "Candy: \n" 
+	    cout << "\t Candy: \n" 
 	    "\t 1. Blueberry Larabar 								\t -0.75\n" 
 	    "\t 2. Cookiedough Larabar								\t -0.75\n" 
 	    "\t 3. Cliff Builder's Bar 								\t -1.25\n"  
-	    "Choose a candy:";
+	    "\t Choose a candy: \n";
 	    cin >> candyChoice;
 
 	    	if ((candyChoice = 1))
 		    {
-		    	cout << "You paid 0.75 for the Blueberry Larabar. Have a good day!";
+		    	cout << "\t You paid 0.75 for the Blueberry Larabar. Have a good day!";
 		    	system ("pause");
 		    }
 		    else if ((candyChoice = 2))
 		    {
-		    	cout << "You paid 0.75 for the Cookiedough Larabar. Have a good day!";
+		    	cout << "\t You paid 0.75 for the Cookiedough Larabar. Have a good day!";
 		    	system ("pause");
 		    }
 		    else if ((candyChoice = 3))
 		    {
-		    	cout << "You paid 1.25 for the Cliff Builder's Bar. Have a good day!";
+		    	cout << "\t You paid 1.25 for the Cliff Builder's Bar. Have a good day!";
 		    	system ("pause");
 		    }
 			else
 	    	{
-		    	cout << "Invalid choice. Money returned.";
+		    	cout << "\t Invalid choice. Money returned.";
 		    	system ("pause");
 	    	}
     }
