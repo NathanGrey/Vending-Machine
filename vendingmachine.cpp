@@ -34,17 +34,17 @@ int main()
 
 		    if ((beverageChoice = 1))
 		    {
-		    	cout << "You paid 1.99 for the Water. Have a good day!";
+		    	cout << "You paid 1.99 for the Water. Have a great day!";
 		    	system ("pause");
 		    }
 		    else if ((beverageChoice = 2))
 		    {
-		    	cout << "You paid 2.75 for the Joint Juice. Have a good day!";
+		    	cout << "You paid 2.75 for the Joint Juice. Have a great day!";
 		    	system ("pause");
 		    }
 		    else if ((beverageChoice = 3))
 		    {
-		    	cout << "You paid 3.00 for the Protein Shake. Have a good day!";
+		    	cout << "You paid 3.00 for the Protein Shake. Have a great day!";
 		    	system ("pause");
 		    }
 			else
@@ -56,7 +56,7 @@ int main()
     
     else if ((userInput = 2))
     {
-	    cout << "\t Baked Goods: \n"
+	    cout << "\t Baked goods: \n"
 	    "\t 1. Blueberry Muffin 								\t -1.25\n"
 	    "\t 2. Peanut Butter Cookie 							\t -2.00\n" 
 	    "\t 3. Peanut Butter Chocolate Chip Cookie 				\t -2.25\n"
@@ -65,17 +65,17 @@ int main()
 
 	       if ((bakedgoodsChoice = 1))
 		    {
-		    	cout << "You paid 1.25 for the Blueberry Muffin. Have a good day!";
+		    	cout << "You paid 1.25 for the Blueberry Muffin. Have a great day!";
 		    	system ("pause");
 		    }
 		    else if ((bakedgoodsChoice = 2))
 		    {
-		    	cout << "You paid 2.00 for the Peanut Butter Cookie. Have a good day!";
+		    	cout << "You paid 2.00 for the Peanut Butter Cookie. Have a great day!";
 		    	system ("pause");
 		    }
 		    else if ((bakedgoodsChoice = 3))
 		    {
-		    	cout << "You paid 2.25 for the Peanut Butter Chocolate Chip Cookie. Have a good day!";
+		    	cout << "You paid 2.25 for the Peanut Butter Chocolate Chip Cookie. Have a great day!";
 		    	system ("pause");
 		    }
 			else
@@ -95,17 +95,17 @@ int main()
 
 	    	if ((fruitsChoice = 1))
 		    {
-		    	cout << "You paid 1.00 for the Apple. Have a good day!";
+		    	cout << "You paid 1.00 for the Apple. Have a great day!";
 		    	system ("pause");
 		    }
 		    else if ((fruitsChoice = 2))
 		    {
-		    	cout << "You paid 1.00 for the Orange. Have a good day!";
+		    	cout << "You paid 1.00 for the Orange. Have a great day!";
 		    	system ("pause");
 		    }
 		    else if ((fruitsChoice = 3))
 		    {
-		    	cout << "You paid 1.00 for the Banana. Have a good day!";
+		    	cout << "You paid 1.00 for the Banana. Have a great day!";
 		    	system ("pause");
 		    }
 			else
@@ -125,17 +125,17 @@ int main()
 
 	    	if ((candyChoice = 1))
 		    {
-		    	cout << "\t You paid 0.75 for the Blueberry Larabar. Have a good day!";
+		    	cout << "\t You paid 0.75 for the Blueberry Larabar. Have a great day!";
 		    	system ("pause");
 		    }
 		    else if ((candyChoice = 2))
 		    {
-		    	cout << "\t You paid 0.75 for the Cookiedough Larabar. Have a good day!";
+		    	cout << "\t You paid 0.75 for the Cookiedough Larabar. Have a great day!";
 		    	system ("pause");
 		    }
 		    else if ((candyChoice = 3))
 		    {
-		    	cout << "\t You paid 1.25 for the Cliff Builder's Bar. Have a good day!";
+		    	cout << "\t You paid 1.25 for the Cliff Builder's Bar. Have a great day!";
 		    	system ("pause");
 		    }
 			else
