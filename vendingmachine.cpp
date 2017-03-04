@@ -57,9 +57,9 @@ cout << "Thanks for stopping by!";
 
 // Functions to handle printing total price
 void getTotals(double& WaterPrice, double& JointJuicePrice, double& ProteinShakePrice,
-			 double& BlueberryMuffinPrice, double& PeanutButterCookePrice, double& PeanutButterChocolateChipCookiePrice,
-			 double& ApplePrice, double& OrangePrice, double& BananaPrice,
-			 double& BlueberryLarabarPrice, double& CookiedoughLarabarPrice, double& CliffBuilderBarPrice)
+			   double& BlueberryMuffinPrice, double& PeanutButterCookePrice, double& PeanutButterChocolateChipCookiePrice,
+			   double& ApplePrice, double& OrangePrice, double& BananaPrice,
+			   double& BlueberryLarabarPrice, double& CookiedoughLarabarPrice, double& CliffBuilderBarPrice)
 {
 
 	WaterPrice = 1.99;
@@ -102,7 +102,7 @@ int main()
 	cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
     cout.precision(2);
-    
+
 	// Input and output begins here
     int input;
     cout << "\tChoose a category: ";
@@ -192,8 +192,20 @@ int main()
     			 break;
     	case 5 : showExitMenu();
     			 break;
-    	default: cout << "Invalid choice. Money returned.";
+    	default: cout << "\tInvalid choice. Money returned.";
     			 system ("pause");
     			 break;
     }
 }
+/* 	====================================[ BUG NOTES ]=========================================
+
+	 1. Had main as a funcion that simply showed the menu and then pointed to another function
+		that all other functions were being processed from. /Changed main to contain them.
+	 2. Had issuing knowing weather to use a switch or if statement. /Realized the difference.
+	 3. Switch statement kept running. /Added breaks.
+	 4. Had A LOT of issues getting the program to handle the totals. Eventually learned how
+		to make it return the multiple totals all in one function.
+	 5. Prices kept being output as rounded numbers. /Changed them from int to doubles.
+
+    =========================================================================================== */
+
