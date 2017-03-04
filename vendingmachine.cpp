@@ -3,6 +3,8 @@
 #include <time.h>		// Uses seed srand with time
 using namespace std;    // This eliminates the need to write std::cout so it can just be cout
 
+// Declaration of functions
+
 
 int main()
 {
@@ -24,7 +26,7 @@ int main()
      		"\t Choose a category:";
     cin >> userInput;
     // If statements with nested ifs for choices
-    if ((userInput = 1))
+    if (userInput == 1)
     {
 	    cout << "\t Beverages: \n"
 	    "\t 1. Water 											\t -1.99\n"
@@ -33,17 +35,17 @@ int main()
 	    "\t Choose a beverage:";
 	    cin >> beverageChoice;
 
-		    if ((beverageChoice = 1))
+		    if (beverageChoice == 1)
 		    {
 		    	cout << "You paid 1.99 for the Water. Have a great day!";
 		    	system ("pause");
 		    }
-		    else if ((beverageChoice = 2))
+		    else if (beverageChoice == 2)
 		    {
 		    	cout << "You paid 2.75 for the Joint Juice. Have a great day!";
 		    	system ("pause");
 		    }
-		    else if ((beverageChoice = 3))
+		    else if (beverageChoice == 3)
 		    {
 		    	cout << "You paid 3.00 for the Protein Shake. Have a great day!";
 		    	system ("pause");
@@ -55,7 +57,7 @@ int main()
 	    	}
 	 }
     
-    else if ((userInput = 2))
+    else if (userInput == 2)
     {
 	    cout << "\t Baked goods: \n"
 	    "\t 1. Blueberry Muffin 								\t -1.25\n"
@@ -64,17 +66,17 @@ int main()
 	    "\n Choose a baked good: \n";
 	    cin >> bakedgoodsChoice;
 
-	       if ((bakedgoodsChoice = 1))
+	       if (bakedgoodsChoice == 1)
 		    {
 		    	cout << "You paid 1.25 for the Blueberry Muffin. Have a great day!";
 		    	system ("pause");
 		    }
-		    else if ((bakedgoodsChoice = 2))
+		    else if (bakedgoodsChoice == 2)
 		    {
 		    	cout << "You paid 2.00 for the Peanut Butter Cookie. Have a great day!";
 		    	system ("pause");
 		    }
-		    else if ((bakedgoodsChoice = 3))
+		    else if (bakedgoodsChoice == 3)
 		    {
 		    	cout << "You paid 2.25 for the Peanut Butter Chocolate Chip Cookie. Have a great day!";
 		    	system ("pause");
@@ -85,7 +87,7 @@ int main()
 		    	system ("pause");
 	    	}
     }
-    else if ((userInput = 3))
+    else if (userInput == 3)
     {
 	    cout << "\t Fruits: \n"
 	    "\t 1. Apple 											\t -1.00\n" 
@@ -94,17 +96,17 @@ int main()
 	    "\t Choose a fruit: \n";
 	    cin >> fruitsChoice;
 
-	    	if ((fruitsChoice = 1))
+	    	if (fruitsChoice == 1)
 		    {
 		    	cout << "You paid 1.00 for the Apple. Have a great day!";
 		    	system ("pause");
 		    }
-		    else if ((fruitsChoice = 2))
+		    else if (fruitsChoice == 2)
 		    {
 		    	cout << "You paid 1.00 for the Orange. Have a great day!";
 		    	system ("pause");
 		    }
-		    else if ((fruitsChoice = 3))
+		    else if (fruitsChoice == 3)
 		    {
 		    	cout << "You paid 1.00 for the Banana. Have a great day!";
 		    	system ("pause");
@@ -115,7 +117,7 @@ int main()
 		    	system ("pause");
 	    	}
     }
-    else if ((userInput = 4))
+    else if (userInput == 4)
     {
 	    cout << "\t Candy: \n" 
 	    "\t 1. Blueberry Larabar 								\t -0.75\n" 
@@ -124,17 +126,17 @@ int main()
 	    "\t Choose a candy: \n";
 	    cin >> candyChoice;
 
-	    	if ((candyChoice = 1))
+	    	if (candyChoice == 1)
 		    {
 		    	cout << "\t You paid 0.75 for the Blueberry Larabar. Have a great day!";
 		    	system ("pause");
 		    }
-		    else if ((candyChoice = 2))
+		    else if (candyChoice == 2)
 		    {
 		    	cout << "\t You paid 0.75 for the Cookiedough Larabar. Have a great day!";
 		    	system ("pause");
 		    }
-		    else if ((candyChoice = 3))
+		    else if (candyChoice == 3)
 		    {
 		    	cout << "\t You paid 1.25 for the Cliff Builder's Bar. Have a great day!";
 		    	system ("pause");
@@ -146,7 +148,7 @@ int main()
 	    	}
     }
     // Exits the game
-    else if ((userInput = 5))
+    else if (userInput == 5)
     {
 	    cout << "Thanks for stopping by!";
 	    system ("pause");
@@ -163,4 +165,5 @@ int main()
 -Void main caused it not to run
 -Forgot to add a system pause
 -Learned to add double parenthensis for regular =
+-Was using said = instead of == which made the choice default to 1
 */
