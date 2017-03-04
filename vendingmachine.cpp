@@ -1,13 +1,14 @@
-#include <iostream>
-#include <stdlib.h>
-#include <time.h>
-using namespace std;     
+#include <iostream>		// Starts the preprocessor command including the contents of iostream
+#include <stdlib.h>		// Generates random numbers
+#include <time.h>		// Uses seed srand with time
+using namespace std;    // This eliminates the need to write std::cout so it can just be cout
 
 
 int main()
 {
+	// Declaration of variables
 	int userInput, beverageChoice, bakedgoodsChoice, fruitsChoice, candyChoice;
-
+	// Main menu output and input
     cout << "**************************************************  \n"
     		"\t Welcome to the Wall Market \n"
     		"************************************************** \n"
@@ -22,7 +23,7 @@ int main()
     		"\t 5. Exit \n \n"
      		"\t Choose a category:";
     cin >> userInput;
-
+    // If statements with nested ifs for choices
     if ((userInput = 1))
     {
 	    cout << "\t Beverages: \n"
@@ -144,11 +145,13 @@ int main()
 		    	system ("pause");
 	    	}
     }
+    // Exits the game
     else if ((userInput = 5))
     {
 	    cout << "Thanks for stopping by!";
 	    system ("pause");
     }
+    // Ends the gamefor invalid input
     else
     {
     	cout << "Invalid choice. Money returned.";
