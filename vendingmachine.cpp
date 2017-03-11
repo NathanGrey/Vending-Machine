@@ -16,8 +16,8 @@ int PlayerTurn()
 		int Roll, PlayerTotalScore;
 		char PlayerChoice;
 
-		cout << "Your total score is " << PlayerTotalScore << ".\n";
-		cout << "Press R to roll again or S to skip.\n";
+		cout << "\tYour total score is " << PlayerTotalScore << ".\n";
+		cout << "\tPress R to roll again or S to skip.\n";
 		cin >> PlayerChoice;
 
 		while (PlayerChoice == 'r')
@@ -27,14 +27,14 @@ int PlayerTurn()
 
 			if (Roll == 1)
 			{
-				cout << "You rolled a 1. Computer's turn.";
+				cout << "\tYou rolled a 1. Computer's turn.\n";
 				break;
 			}
 			else
 			{
 				CurrentScore += Roll;
-				cout << "You rolled a " << Roll << ". Your Score is " << CurrentScore;
-				cout << "Press R to roll again or s to skip.";
+				cout << "\tYou rolled a " << Roll << ". Your Score is " << CurrentScore;
+				cout << "\t\nPress R to roll again or s to skip.\n";
 				cin >> PlayerChoice;
 			}
 
@@ -50,8 +50,32 @@ int PlayerTurn()
 
 int ComputerTurn()
 {
-	int ComputerScore;
-	return ComputerScore;
+	int CurrentScore = 0;
+	int ComputerTotalScore, Roll;
+
+	cout << "\tThe Computer has a total score of " << ComputerTotalScore << ".\n";
+	while ((CurrentScore <= 20) && (CurrentScore !=1))
+	{
+		Roll = RollSixSidedDie();
+		if (Roll == 1)
+		{
+			cout << "\tThe Computer rolled a 1. Player's turn.\n\n";
+			PlayerTurn();
+			break;
+		}
+		else
+		{
+			CurrentScore += Roll;
+			cout << "\tThe Computer rolled a " << Roll << ". The Computer's score is " << CurrentScore < ".\n\n";
+		}
+	if (CurrentScore >= 20)
+	{
+		ComputerTotalScore +=CurrentScore;
+		cout << "\t The Computer's Total Score is " << Roll << ".\n\n";
+	}
+
+	}
+	return ComputerTotalScore;
 }
 
 void VSMode()
@@ -124,8 +148,7 @@ void showExitMenu()
 void SinglePlayerMode()
 {
 	int Player, Computer;
-	char PlayerChoice;
-	
+	const int WinningScore == 100;
 	srand(time(NULL));
 
 	Player = rand() % 100 + 1;
@@ -153,21 +176,14 @@ void SinglePlayerMode()
 	else if (Computer > Player)
 		{
 			cout << "\tComputer will roll first!\n";
-			cout << "\tPress Enter to roll.\n";
-			cin.get();
-    		cin.ignore();
-    		cout << "\tComputer rolled a " << RollSixSidedDie();
+			ComputerTurn();
 		}
 	else if (Player == Computer)
 		{
 			cout << "\tIt's a tie! Let's roll again.\n";
 			VSMode();
 		}
-
 }
-
-
-
 int main()
 {
     showMainMenu();
